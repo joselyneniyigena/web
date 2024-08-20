@@ -3,61 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spare Parts</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Vehicle Spare Linkage</title>
+    
+    
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <p>Call us: +250 789 932 341</p>
-        </div>
-        <nav>
-            <div class="logo">Vehicle Spare Linkage</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="spare_parts.html">Spare Parts</a></li>
-                <li><a href="categories.html">Categories</a></li>
-                <li><a href="manufacturers.html">Manufacturers</a></li>
-                <li><a href="vendor.html">Vendor</a></li>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Vehicle Spare Linkage</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="spare_parts.html">Spare Parts</a></li>
+                <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="manufacturers.html">Manufacturers</a></li>
+                <li class="nav-item"><a class="nav-link" href="vendor.html">Become Vendor</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <h1>Spare Parts</h1>
-        <div class="spare-parts-grid">
-            <div class="part-item">
-                <img src="images/brake_master_cylinder.jpg" alt="Brake Master Cylinder">
-                <p>Brake Master Cylinder</p>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/brake_master_cylinder.jpg" class="img-fluid" alt="Brake master cylinder">
             </div>
-            <div class="part-item">
-                <img src="images/hyundai_elantran.jpg" alt="Hyundai Elantran">
-                <p>Hyundai Elantran</p>
-            </div>
-            <div class="part-item">
-                <img src="images/auto_car_mirror.jpg" alt="Auto Car Mirror">
-                <p>Auto Car Mirror</p>
-            </div>
-            <div class="part-item">
-                <img src="images/water_pump_mitsubishi.jpg" alt="Water Pump for Mitsubishi">
-                <p>Water Pump for Mitsubishi</p>
-            </div>
-            <div class="part-item">
-                <img src="images/cnc_brake.jpg" alt="CNC Brake">
-                <p>CNC Brake</p>
-            </div>
-            <div class="part-item">
-                <img src="images/transmission_filter.jpg" alt="Transmission Filter">
-                <p>Transmission Filter</p>
+            <div class="col-md-6">
+                <h2>Brake Master Cylinder</h2>
+                <p>34000.00 RWF</p>
+                <p>This is the cheapest spare part you ever found on the internet. With the longest of the best Toyota's tools.</p>
+                <button class="btn btn-primary">Add to Cart</button>
             </div>
         </div>
-        
-        
-    </main>
 
-    <footer>
-        <p>&copy; 2024 NJ. All rights reserved.</p>
-        <p><a href="#">Terms & Conditions</a></p>
+        
+        <h3 class="mt-5">Related Spare Parts</h3>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="images/brake_master_cylinder.jpg" class="card-img-top" alt="Brake Master Cylinder">
+                    <div class="card-body">
+                        <p class="card-text">Brake Master Cylinder</p>
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="images/hyundai_elantran.jpg" class="card-img-top" alt="Hyundai Elantran">
+                    <div class="card-body">
+                        <p class="card-text">Hyundai Elantran</p>
+                        <button class="btn btn-primary btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <footer class="bg-primary text-white mt-5 p-4 text-center">
+        © 2024 Your Company. All rights reserved.
     </footer>
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
